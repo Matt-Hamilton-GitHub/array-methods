@@ -47,3 +47,12 @@ function removeVowels(str){
 var data3 = removeVowels('Elie')
 
 console.log(data3);
+
+
+function doubleOddNumbers(arr){
+    
+    return arr.filter(item => item%2 !== 0 ).map(num => num*2)
+    
+}
+
+doubleOddNumbers([1,2,3,4,5])
