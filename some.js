@@ -26,4 +26,9 @@ function hasNoDuplicates(arr){
     
 }
 
-console.log(indexOf(arr));
+function hasCertainKey(arr, key){
+    return arr.every(item => key in item )
+}
+function hasCertainValue(arr, key, searchValue){
+    return arr.every(item => item[key] === searchValue)
+}
